@@ -8,5 +8,7 @@
  "dependencies": {
   "deepmerge": "^1.5.2"
  },
- "gitHead": "79cee62ad34fc702e4c1f4087c82a65ca5a6c963"
+ "publishConfig": {
+    "access": "public"
+  }
 }
