@@ -1,6 +1,6 @@
 {
   "name": "@zoro/button",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "button component",
   "main": "lib/index.common.js",
   "author": "zoro",
