@@ -3,27 +3,27 @@
       <h3>引用</h3>
       <h5>基础引用</h5>
       <h-quote align="left">
-        This is a component of quote! Just made by zoro!
-        <footer slot="footer">zoro</footer>
+        This is a component of quote! Just made by aoping!
+        <footer slot="footer">aoping</footer>
       </h-quote>
       <h5>语义</h5>
       <h-quote semantic="primary" align="left">
-        This is a component of quote! Just made by zoro!
-        <footer slot="footer">zoro</footer>
+        This is a component of quote! Just made by aoping!
+        <footer slot="footer">aoping</footer>
       </h-quote>
       <h5>圆角</h5>
       <h-quote semantic="success" align="left" radius="small">
-        This is a component of quote! Just made by zoro!
-        <footer slot="footer">zoro</footer>
+        This is a component of quote! Just made by aoping!
+        <footer slot="footer">aoping</footer>
       </h-quote>
       <h-quote semantic="danger" align="left" radius="large">
-        This is a component of quote! Just made by zoro!
-        <footer slot="footer">zoro</footer>
+        This is a component of quote! Just made by aoping!
+        <footer slot="footer">aoping</footer>
       </h-quote>
       <h5>阴影</h5>
       <h-quote semantic="danger" align="left" radius="large" :shadow="true">
-        This is a component of quote! Just made by zoro!
-        <footer slot="footer">zoro</footer>
+        This is a component of quote! Just made by aoping!
+        <footer slot="footer">aoping</footer>
       </h-quote>
       <h3>参数示例</h3> 
       <props-table :data="props" caption="引用属性"/>

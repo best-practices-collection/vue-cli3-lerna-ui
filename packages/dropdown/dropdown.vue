@@ -22,10 +22,10 @@
   </div>
 </template>
 <script>
-  import clickout from '@zoro/utils/clickout'
-  import background from '@zoro/utils/background'
-  import dom from '@zoro/utils/dom'
-  import scroll from '@zoro/utils/scroll'
+  import clickout from '@aoping/utils/clickout'
+  import background from '@aoping/utils/background'
+  import dom from '@aoping/utils/dom'
+  import scroll from '@aoping/utils/scroll'
 
   export default {
     name: 'HDropdown',

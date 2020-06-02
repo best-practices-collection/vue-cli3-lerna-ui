@@ -45,7 +45,7 @@
         <h-btn slot="trigger" icon="fa fa-angle-down">动画</h-btn>
         <h-dropdown-item to="/animation/particle">粒子背景(particle)</h-dropdown-item>
       </h-dropdown>
-      <h-btn to="https://github.com/zoro/vue-cli3-lerna-ui" class="right" left-icon="fa fa-github" semantic="black" radius="small">Github</h-btn>
+      <h-btn to="https://github.com/aoping/vue-cli3-lerna-ui" class="right" left-icon="fa fa-github" semantic="black" radius="small">Github</h-btn>
     </h-nav>
     <div class="main-content">   
       <router-view></router-view> 

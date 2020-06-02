@@ -3,7 +3,7 @@
 ## Project setup
 
 ``` bash
-vue create --preset zoro/vue-cli3-lerna-ui my-project --packageManager yarn
+vue create --preset aoping/vue-cli3-lerna-ui my-project --packageManager yarn
 ```
 
 ### Compiles and hot-reloads for development
@@ -39,7 +39,7 @@ yarn lint
 
 ### Doc
 
-[Vue CLI 3结合Lerna进行UI设计](https://github.com/zoro/zoro.github.io/issues/4)
+[Vue CLI 3结合Lerna进行UI设计](https://github.com/aoping/aoping.github.io/issues/4)
 
 
 

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Ui from '@/ui'
-import '@zoro/theme/src/index.less'
+import '@aoping/theme/src/index.less'
 import '@/assets/icon/css/font-awesome.min.css'
 
 Vue.use(Ui)

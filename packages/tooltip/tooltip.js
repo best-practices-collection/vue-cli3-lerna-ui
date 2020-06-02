@@ -1,7 +1,7 @@
 
 import Vue from 'vue'
-import vnode from '@zoro/utils/vnode'
-import tooltip from '@zoro/utils/tooltip'
+import vnode from '@aoping/utils/vnode'
+import tooltip from '@aoping/utils/tooltip'
 import { setTimeout, clearTimeout } from 'timers'
 
 export default {

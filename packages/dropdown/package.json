@@ -1,11 +1,12 @@
 {
-  "name": "@zoro/dropdown",
+  "name": "@aoping/dropdown",
   "version": "1.0.3",
   "description": "",
   "main": "index.js",
-  "author": "zoro",
+  "author": "aoping",
   "license": "ISC",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "49db563069dc67150d0d2ed1074182f1b93874f0"
 }

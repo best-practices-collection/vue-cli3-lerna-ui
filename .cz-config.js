@@ -27,8 +27,8 @@ module.exports = {
   ],
 
   scopes: [
-    { name: '@zoro' }, 
-    { name: '@zoro/button' }
+    { name: '@aoping' }, 
+    { name: '@aoping/button' }
   ],
 
   allowTicketNumber: false,

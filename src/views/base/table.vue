@@ -55,7 +55,7 @@ export default {
     return {
       tableDate: [{
         age: '22',
-        name: 'zoro'
+        name: 'aoping'
       }, {
         name: 'ziyi3',
         age: '33',

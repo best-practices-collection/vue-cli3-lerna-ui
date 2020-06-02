@@ -1,33 +1,33 @@
 /* 布局 */
-import Row from '@zoro/row'
-import Col from '@zoro/col'
+import Row from '@aoping/row'
+import Col from '@aoping/col'
 
 /* 基础组件 */
-import Quote from '@zoro/quote'
-import Code from '@zoro/code'
-import  { Btn, BtnGroup } from '@zoro/button/index'
-import { Table, TableColumn } from '@zoro/table'
-import Pagination from '@zoro/pagination'
-import { Radio, RadioBtn, RadioGroup } from '@zoro/radio'
-import { Checkbox, CheckboxBtn, CheckboxGroup } from '@zoro/checkbox'
-import Select from '@zoro/select'
-import Input from '@zoro/input'
-import Alert from '@zoro/alert'
-import Tooltip from '@zoro/tooltip'
-import { Tag, TagGroup } from '@zoro/tag'
-import Snackbar from '@zoro/snackbar'
-import Toast from '@zoro/toast'
+import Quote from '@aoping/quote'
+import Code from '@aoping/code'
+import  { Btn, BtnGroup } from '@aoping/button/index'
+import { Table, TableColumn } from '@aoping/table'
+import Pagination from '@aoping/pagination'
+import { Radio, RadioBtn, RadioGroup } from '@aoping/radio'
+import { Checkbox, CheckboxBtn, CheckboxGroup } from '@aoping/checkbox'
+import Select from '@aoping/select'
+import Input from '@aoping/input'
+import Alert from '@aoping/alert'
+import Tooltip from '@aoping/tooltip'
+import { Tag, TagGroup } from '@aoping/tag'
+import Snackbar from '@aoping/snackbar'
+import Toast from '@aoping/toast'
 
 /* 弹框 */
-import Poper from '@zoro/poper'
-import Dialog from '@zoro/dialog'
+import Poper from '@aoping/poper'
+import Dialog from '@aoping/dialog'
 
 /* 复合组件 */
-import { Dropdown, DropdownItem } from '@zoro/dropdown'
-import { Nav, NavItem } from '@zoro/nav'
+import { Dropdown, DropdownItem } from '@aoping/dropdown'
+import { Nav, NavItem } from '@aoping/nav'
 
 /* 动画 */
-import Particle from '@zoro/particle'
+import Particle from '@aoping/particle'
 
 const components = [
   Row,

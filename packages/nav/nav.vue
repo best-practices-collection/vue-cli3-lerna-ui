@@ -24,9 +24,9 @@
   </transition> 
 </template>
 <script>
-  import clickout from '@zoro/utils/clickout'
-  import scroll from '@zoro/utils/scroll'
-  import screen from '@zoro/utils/screen'
+  import clickout from '@aoping/utils/clickout'
+  import scroll from '@aoping/utils/scroll'
+  import screen from '@aoping/utils/screen'
 
   export default {
     name: 'HNav',

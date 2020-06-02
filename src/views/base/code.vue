@@ -92,7 +92,7 @@ computed: {
   background-image: url("/skins/cy/images/icons.png");
 }
 
-.zoro {}
+.aoping {}
 
 @media screen,print{}
       </h-code>  

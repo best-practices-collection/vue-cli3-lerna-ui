@@ -1,9 +1,9 @@
 {
-  "name": "@zoro/button",
+  "name": "@aoping/button",
   "version": "1.0.3",
   "description": "button component",
   "main": "lib/index.common.js",
-  "author": "zoro",
+  "author": "aoping",
   "license": "ISC",
   "scripts": {
     "lib": "vue-cli-service build --target lib --formats commonjs --name index index.js"
@@ -20,5 +20,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "49db563069dc67150d0d2ed1074182f1b93874f0"
 }

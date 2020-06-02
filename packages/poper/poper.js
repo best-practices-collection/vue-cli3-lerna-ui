@@ -1,9 +1,9 @@
 
-import tooltip from '@zoro/utils/tooltip'
-import vnode from '@zoro/utils/vnode'
+import tooltip from '@aoping/utils/tooltip'
+import vnode from '@aoping/utils/vnode'
 import Vue from 'vue'
 import { setTimeout, clearTimeout } from 'timers'
-import dom from '@zoro/utils/dom'
+import dom from '@aoping/utils/dom'
 
 export default {
   name: 'HPoper',
