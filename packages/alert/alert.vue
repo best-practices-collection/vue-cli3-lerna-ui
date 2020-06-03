@@ -1,6 +1,6 @@
 <template>
   <transition name="h-alert-fade">
-    <div class="h-alert" 
+    <div class="h-alert"
       :class="[
         closeable ? 'h-alert-closeable' : '',
         semantic ? `h-alert-semantic-${semantic}` : '',
@@ -12,29 +12,29 @@
       <span v-show="closeable" @click="close">×</span>
       <slot></slot>
     </div>
-  </transition>  
+  </transition>
 </template>
 <script>
-  export default {
-    name: 'HAlert',
-    data () {
-      return {
-        isVisible: true
-      }
-    },
+export default {
+  name: 'HAlert',
+  data() {
+    return {
+      isVisible: true,
+    };
+  },
 
-    props: {
-      closeable: Boolean,
-      semantic: String,
-      radius: String,
-      size: String,
-    },
+  props: {
+    closeable: Boolean,
+    semantic: String,
+    radius: String,
+    size: String,
+  },
 
-    methods: {
-      close () {
-        this.$emit('close')
-        this.isVisible = false
-      },
-    }
-  }
+  methods: {
+    close() {
+      this.$emit('close');
+      this.isVisible = false;
+    },
+  },
+};
 </script>
