@@ -58,13 +58,14 @@
   "husky": {
     "hooks": {
       "post-merge": "lerna bootstrap",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "workspaces": [
     "packages/*",
-    "plugins/*"
+    "plugins/*",
+    "src/*"
   ],
   "publishConfig": {
     "access": "public"
