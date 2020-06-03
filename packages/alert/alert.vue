@@ -17,7 +17,6 @@
 <script>
   export default {
     name: 'HAlert',
-
     data () {
       return {
         isVisible: true
@@ -28,14 +27,14 @@
       closeable: Boolean,
       semantic: String,
       radius: String,
-      size: String
+      size: String,
     },
 
     methods: {
       close () {
         this.$emit('close')
         this.isVisible = false
-      }
+      },
     }
   }
 </script>
