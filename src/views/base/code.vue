@@ -35,7 +35,7 @@
   * @desc: 这是一个JavaScript语言的高亮代码块插件，以下是栅格系统设计的部分源代码
   * @date: 2017/9/27 15:10
   * @author: zhuxiankang
-  * @params: 
+  * @params:
   */
 computed: {
   rowClass () {
@@ -95,7 +95,7 @@ computed: {
 .aoping {}
 
 @media screen,print{}
-      </h-code>  
+      </h-code>
        <h-code  :line="!!line" :lang="language" :theme="theme" :shadow="!!shadow" v-if="language === 'html'">
 &lt;!DOCTYPE html>
 &lt;html>
@@ -108,21 +108,21 @@ computed: {
     &lt;!-- built files will be auto injected -->
   &lt;/body>
 &lt;/html>
-      </h-code>  
+      </h-code>
       <h3>参数示例</h3>
       <props-table :data="props" caption="代码属性"/>
-    </div>    
+    </div>
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'code',
   components: {
-    propsTable
+    propsTable,
   },
-  data () {
+  data() {
     return {
       theme: 'light',
       language: 'html',
@@ -134,30 +134,30 @@ export default {
         desc: '主题',
         type: 'String',
         option: 'light、dark',
-        default: 'light'
+        default: 'light',
       }, {
         para: 'language',
         native: 'false',
         desc: '语言类型',
         type: 'String',
         option: 'html、css、javascript',
-        default: 'javascript'
+        default: 'javascript',
       }, {
         para: 'line',
         native: 'false',
         desc: '是否显示行数',
         type: 'Boolean',
         option: 'true、false',
-        default: 'true'
+        default: 'true',
       }, {
         para: 'shadow',
         native: 'false',
         desc: '阴影',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
-      }]
-    }
-  }
-}
+        default: 'false',
+      }],
+    };
+  },
+};
 </script>

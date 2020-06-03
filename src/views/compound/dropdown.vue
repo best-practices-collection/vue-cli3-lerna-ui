@@ -83,20 +83,20 @@
       <props-table :data="eventProps" caption="下拉菜单事件"/>
       <props-table :data="itemProps" caption="下拉菜单列表属性"/>
       <props-table :data="itemEventProps" caption="下拉菜单列表属性"/>
-    </div>    
+    </div>
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'dropdown',
 
   components: {
-    propsTable
+    propsTable,
   },
 
-  data () {
+  data() {
     return {
       dropdownValue: '',
       props: [{
@@ -105,49 +105,49 @@ export default {
         desc: 'Dropdown的绑定值',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'min-width',
         native: 'false',
         desc: '默认最小宽度(响应式无效)',
         type: 'String',
         option: '-',
-        default: '200px'
+        default: '200px',
       }, {
         para: 'max-height',
         native: 'false',
         desc: '默认最大高度',
         type: 'String',
         option: '-',
-        default: '300px'
+        default: '300px',
       }, {
         para: 'hoverable',
         native: 'false',
         desc: 'hover显示(响应式无效)',
         type: 'Boolean',
         option: 'false、true',
-        default: 'true'
+        default: 'true',
       }, {
         para: 'position',
         native: 'false',
         desc: '下拉菜单位置(响应式无效)',
         type: 'Boolean',
         option: 'top-right, top-left, bottom-left',
-        default: 'bottom-left'
+        default: 'bottom-left',
       }, {
         para: 'align',
         native: 'false',
         desc: '对齐(例:在导航中的对齐方式)',
         type: 'String',
         option: 'left、right',
-        default: '-'
+        default: '-',
       }, {
         para: 'router',
         native: 'false',
         desc: '是否使用vue-router路由',
         type: 'Boolean',
         option: 'false、true',
-        default: '-'
+        default: '-',
       }],
 
       eventProps: [{
@@ -156,21 +156,21 @@ export default {
         desc: 'v-model值变化监听事件',
         type: 'Function(newValue)',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'open',
         native: 'false',
         desc: '下拉菜单展开时触发',
         type: 'Function()',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'close',
         native: 'false',
         desc: '下拉菜收缩时触发',
         type: 'Function()',
         option: '-',
-        default: '-'
+        default: '-',
       }],
 
       itemProps: [{
@@ -179,35 +179,35 @@ export default {
         desc: '列表类型',
         type: 'String',
         option: 'title、separator、custom、list',
-        default: 'list'
+        default: 'list',
       }, {
         para: 'disabled',
         native: 'false',
         desc: '禁止点击',
         type: 'String',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'value',
         native: 'false',
         desc: 'value值',
         type: 'String/Number/Boolean/Object/Array/Symbol/Function',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'icon',
         native: 'false',
         desc: '图标',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'to',
         native: 'false',
         desc: 'vue-router的路径或者window.loadtion的值',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }],
 
       itemEventProps: [{
@@ -216,12 +216,9 @@ export default {
         desc: 'click事件',
         type: 'Function(value)',
         option: '-',
-        default: '-'
-      }]
-    }
-  }
-}
+        default: '-',
+      }],
+    };
+  },
+};
 </script>
-
-
-

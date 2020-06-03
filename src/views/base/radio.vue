@@ -73,7 +73,7 @@
       <h-radio-btn native-value="Danger" semantic="danger" icon="fa fa-spinner fa-spin"></h-radio-btn>
     </h-radio-group>
 
-    <h3>参数示例</h3> 
+    <h3>参数示例</h3>
     <props-table :data="props" caption="单选框参数"/>
     <props-table :data="groupProps" caption="单选框组参数"/>
     <props-table :data="groupEvents" caption="单选框组事件"/>
@@ -82,16 +82,16 @@
 
 <script>
 
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'radio',
 
   components: {
-    propsTable
+    propsTable,
   },
 
-  data () {
+  data() {
     return {
       radio: 'Disabled',
       radioGroup: 'One',
@@ -104,35 +104,35 @@ export default {
         desc: 'Radio的绑定值',
         type: 'String/Number/Boolean',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'native-value',
         native: 'true',
         desc: ' Radio的原生value属性',
         type: 'String/Number/Boolean',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'disabled',
         native: 'true',
         desc: ' Radio的原生disabled属性',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'semantic',
         native: 'false',
         desc: '语义类型',
         type: 'String',
         option: 'primary、success、info、warning、danger、text',
-        default: '-'
+        default: '-',
       }, {
         para: 'icon',
         native: 'false',
         desc: '图标(推荐使用font-awesome的图标库)',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }],
 
       groupProps: [{
@@ -141,35 +141,35 @@ export default {
         desc: 'Radio的绑定值',
         type: 'String/Number/Boolean',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'disabled',
         native: 'true',
         desc: ' Radio的原生disabled属性',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'radius',
         native: 'false',
         desc: '圆角(按钮式单选框组有效)',
         type: 'String',
         option: 'small、large、circle',
-        default: '-'
+        default: '-',
       }, {
         para: 'size',
         native: 'false',
         desc: '尺寸(按钮式单选框组有效)',
         type: 'String',
         option: 'small、large',
-        default: '-'
+        default: '-',
       }, {
         para: 'shadow',
         native: 'false',
         desc: '阴影',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }],
 
       groupEvents: [{
@@ -178,10 +178,9 @@ export default {
         desc: 'v-model值变化监听事件',
         type: 'Function(newValue)',
         option: '-',
-        default: '-'
-      }]
-    }
-  }
-}
+        default: '-',
+      }],
+    };
+  },
+};
 </script>
-

@@ -16,22 +16,22 @@
       <h-btn @click="ShowWarningSnackbar">Warning Toast</h-btn>
       <h-btn @click="ShowDangerSnackbar">Danger Toast</h-btn>
 
-      <h3>参数示例</h3> 
+      <h3>参数示例</h3>
       <props-table :data="props" caption="通知属性"/>
-    </div>    
+    </div>
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'toast',
 
   components: {
-    propsTable
+    propsTable,
   },
 
-  data () {
+  data() {
     return {
       semantic: '',
       align: '',
@@ -41,120 +41,117 @@ export default {
         desc: '弹框信息',
         type: 'String',
         option: '',
-        default: ''
+        default: '',
       }, {
         para: 'position',
         native: 'false',
         desc: '弹框信息位置',
         type: 'Boolean',
         option: 'top, top-right, top-left, bottom, bottom-left, bottom-right',
-        default: 'top'
+        default: 'top',
       }, {
         para: 'duration',
         native: 'false',
         desc: '弹框信息持续时间',
         type: 'Number',
         option: '-',
-        default: '3000'
+        default: '3000',
       }, {
         para: 'semantic',
         native: 'false',
         desc: '语义类型',
         type: 'String',
         option: 'default、dark、primary、success、info、warning、danger',
-        default: 'dark'
-      }]
-    }
+        default: 'dark',
+      }],
+    };
   },
 
   methods: {
-    ShowTopSnackbar () {
-      this.$toast('hello world')
+    ShowTopSnackbar() {
+      this.$toast('hello world');
     },
 
-    ShowTopLeftSnackbar () {
+    ShowTopLeftSnackbar() {
       this.$toast({
         message: 'hello world',
-        position: 'top-left'
-      })
+        position: 'top-left',
+      });
     },
 
-    ShowTopRightSnackbar () {
+    ShowTopRightSnackbar() {
       this.$toast({
         message: 'hello world',
-        position: 'top-right'
-      })
+        position: 'top-right',
+      });
     },
 
-    ShowBottomLeftSnackbar () {
+    ShowBottomLeftSnackbar() {
       this.$toast({
         message: 'hello world',
-        position: 'bottom-left'
-      })
+        position: 'bottom-left',
+      });
     },
 
-    ShowBottomSnackbar () {
+    ShowBottomSnackbar() {
       this.$toast({
         message: 'hello world',
-        position: 'bottom'
-      })
+        position: 'bottom',
+      });
     },
 
-    ShowBottomRightSnackbar () {
+    ShowBottomRightSnackbar() {
       this.$toast({
         message: 'hello world',
-        position: 'bottom-right'
-      })
+        position: 'bottom-right',
+      });
     },
 
-    ShowDefaultSnackbar () {
-      this.$toast({
-        message: 'hello world',
-        actionText: 'ENTRY',
-        semantic: 'default'
-      })
-    },
-
-    ShowPrimarySnackbar () {
+    ShowDefaultSnackbar() {
       this.$toast({
         message: 'hello world',
         actionText: 'ENTRY',
-        semantic: 'primary'
-      })
+        semantic: 'default',
+      });
     },
 
-    ShowSuccessSnackbar () {
+    ShowPrimarySnackbar() {
       this.$toast({
         message: 'hello world',
         actionText: 'ENTRY',
-        semantic: 'success'
-      })
+        semantic: 'primary',
+      });
     },
 
-    ShowInfoSnackbar () {
+    ShowSuccessSnackbar() {
       this.$toast({
         message: 'hello world',
         actionText: 'ENTRY',
-        semantic: 'info'
-      })
+        semantic: 'success',
+      });
     },
 
-    ShowWarningSnackbar () {
+    ShowInfoSnackbar() {
       this.$toast({
         message: 'hello world',
-        semantic: 'warning'
-      })
+        actionText: 'ENTRY',
+        semantic: 'info',
+      });
     },
 
-    ShowDangerSnackbar () {
+    ShowWarningSnackbar() {
       this.$toast({
         message: 'hello world',
-        semantic: 'danger'
-      })
-    }
-  }
-}
+        semantic: 'warning',
+      });
+    },
+
+    ShowDangerSnackbar() {
+      this.$toast({
+        message: 'hello world',
+        semantic: 'danger',
+      });
+    },
+  },
+};
 </script>
-
-
-

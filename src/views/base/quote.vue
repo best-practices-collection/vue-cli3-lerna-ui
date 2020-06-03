@@ -25,22 +25,22 @@
         This is a component of quote! Just made by aoping!
         <footer slot="footer">aoping</footer>
       </h-quote>
-      <h3>参数示例</h3> 
+      <h3>参数示例</h3>
       <props-table :data="props" caption="引用属性"/>
-    </div>    
+    </div>
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'quote',
 
   components: {
-    propsTable
+    propsTable,
   },
 
-  data () {
+  data() {
     return {
       semantic: '',
       align: '',
@@ -50,26 +50,23 @@ export default {
         desc: '语义类型',
         type: 'String',
         option: 'default、primary、success、info、warning、danger',
-        default: 'default'
+        default: 'default',
       }, {
         para: 'radius',
         native: 'false',
         desc: '圆角',
         type: 'String',
         option: 'small、large',
-        default: '-'
+        default: '-',
       }, {
         para: 'shadow',
         native: 'false',
         desc: '阴影',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
-      }]
-    }
-  }
-}
+        default: 'false',
+      }],
+    };
+  },
+};
 </script>
-
-
-

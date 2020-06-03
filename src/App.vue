@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'app'
-}
+  name: 'app',
+};
 </script>
 
 <style lang="less">
@@ -15,4 +15,3 @@ export default {
     padding-bottom: 20px;
   }
 </style>
-

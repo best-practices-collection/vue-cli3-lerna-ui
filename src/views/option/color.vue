@@ -1,17 +1,17 @@
 <template>
   <div>
     <h3>语义色</h3>
-    <color-table 
-      :data="semantic" 
-      :row-style="rowStyle" 
+    <color-table
+      :data="semantic"
+      :row-style="rowStyle"
       :class-default="classDefault"
       :class-gradient="classGradient"
-      /> 
+      />
   </div>
 </template>
 
 <script>
-import colorTable from '@/views/option/colorTable'
+import colorTable from '@/views/option/colorTable';
 
 const semanticVar = {
   primary: 'primary',
@@ -19,16 +19,16 @@ const semanticVar = {
   info: 'info',
   warning: 'warning',
   danger: 'danger',
-  gray: 'gray'
-}
+  gray: 'gray',
+};
 
 export default {
   name: 'color',
   components: {
-    colorTable
+    colorTable,
   },
 
-  data () {
+  data() {
     return {
       classDefault: 'h-td-0',
       classGradient: ['h-td-10', 'h-td-20', 'h-td-30', 'h-td-40', 'h-td-50', 'h-td-60', 'h-td-70', 'h-td-80', 'h-td-85'],
@@ -37,59 +37,57 @@ export default {
         index: '1',
         semantic: '主要',
         var: semanticVar.primary,
-        value: '#3273dc'
+        value: '#3273dc',
       }, {
         index: '2',
         semantic: '成功',
         var: semanticVar.success,
-        value: '#23d160'
+        value: '#23d160',
       }, {
         index: '3',
         semantic: '信息',
         var: semanticVar.info,
-        value: '#209cee'
+        value: '#209cee',
       }, {
         index: '4',
         semantic: '警告',
         var: semanticVar.warning,
-        value: '#ffdd57'
+        value: '#ffdd57',
       }, {
         index: '5',
         semantic: '危险',
         var: semanticVar.danger,
-        value: '#ff3860'
+        value: '#ff3860',
       }, {
         index: '6',
         semantic: '辅助',
         var: semanticVar.gray,
-        value: '#000'
-      }]
-    }
+        value: '#000',
+      }],
+    };
   },
 
   methods: {
-    rowStyle (row) {
-      return `semantic-${row.var}`
-    }
-  }
-}
+    rowStyle(row) {
+      return `semantic-${row.var}`;
+    },
+  },
+};
 </script>
 
 
-
-
 <style lang="less">
-               
-@gray-10:                         lighten(#000, 10%); 
-@gray-20:                         lighten(#000, 20%); 
-@gray-30:                         lighten(#000, 30%); 
-@gray-40:                         lighten(#000, 40%); 
-@gray-50:                         lighten(#000, 50%); 
-@gray-60:                         lighten(#000, 60%); 
-@gray-70:                         lighten(#000, 70%); 
-@gray-80:                         lighten(#000, 80%); 
-@gray-90:                         lighten(#000, 90%); 
-@gray-95:                         lighten(#000, 95%); 
+
+@gray-10:                         lighten(#000, 10%);
+@gray-20:                         lighten(#000, 20%);
+@gray-30:                         lighten(#000, 30%);
+@gray-40:                         lighten(#000, 40%);
+@gray-50:                         lighten(#000, 50%);
+@gray-60:                         lighten(#000, 60%);
+@gray-70:                         lighten(#000, 70%);
+@gray-80:                         lighten(#000, 80%);
+@gray-90:                         lighten(#000, 90%);
+@gray-95:                         lighten(#000, 95%);
 
 
 @primary:                       #62a8ea; //hsl(217, 71%, 53%);
@@ -102,48 +100,48 @@ export default {
 .color-primary(@percent) {
   .h-tr-semantic-primary {
     .h-td-@{percent} {
-      background-color: lighten(@primary, @percent); 
-    } 
+      background-color: lighten(@primary, @percent);
+    }
   }
 }
 
 .color-success(@percent) {
   .h-tr-semantic-success {
     .h-td-@{percent} {
-      background-color: lighten(@success, @percent); 
-    } 
+      background-color: lighten(@success, @percent);
+    }
   }
 }
 
 .color-info(@percent) {
   .h-tr-semantic-info {
     .h-td-@{percent} {
-      background-color: lighten(@info, @percent); 
-    } 
+      background-color: lighten(@info, @percent);
+    }
   }
 }
 
 .color-warning(@percent) {
   .h-tr-semantic-warning {
     .h-td-@{percent} {
-      background-color: lighten(@warning, @percent); 
-    } 
+      background-color: lighten(@warning, @percent);
+    }
   }
 }
 
 .color-danger(@percent) {
   .h-tr-semantic-danger {
     .h-td-@{percent} {
-      background-color: lighten(@danger, @percent); 
-    } 
+      background-color: lighten(@danger, @percent);
+    }
   }
 }
 
 .color-gray(@percent) {
   .h-tr-semantic-gray {
     .h-td-@{percent} {
-      background-color: lighten(@gray-10, @percent); 
-    } 
+      background-color: lighten(@gray-10, @percent);
+    }
   }
 }
 
@@ -187,4 +185,3 @@ export default {
 .color-gray(85);
 
 </style>
-

@@ -7,7 +7,7 @@
       <h-nav-item to="/layout">布局</h-nav-item>
       <h-nav-item :disabled="true" to="/layout">基础组件</h-nav-item>
       <h-input type="text" radius="small" placeholder="search" icon="fa fa-search" size="large"></h-input>
-      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn> 
+      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn>
       <h-dropdown position="bottom-right" align="right" >
         <h-btn slot="trigger" icon="fa fa-angle-down" size="large"> 城市</h-btn>
         <h-dropdown-item type="title">浙江省</h-dropdown-item>
@@ -26,7 +26,7 @@
       <h-nav-item to="/layout">布局</h-nav-item>
       <h-nav-item :disabled="true" to="/layout">基础组件</h-nav-item>
       <h-input type="text" radius="small" placeholder="search" icon="fa fa-search" size="large"></h-input>
-      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn> 
+      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn>
       <h-dropdown position="bottom-right" align="right" >
         <h-btn slot="trigger" icon="fa fa-angle-down" size="large"> 城市</h-btn>
         <h-dropdown-item type="title">浙江省</h-dropdown-item>
@@ -45,7 +45,7 @@
       <h-nav-item to="/layout">布局</h-nav-item>
       <h-nav-item :disabled="true" to="/layout">基础组件</h-nav-item>
       <h-input type="text" radius="small" placeholder="search" icon="fa fa-search" size="large"></h-input>
-      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn> 
+      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn>
       <h-dropdown position="bottom-right" align="right" >
         <h-btn slot="trigger" icon="fa fa-angle-down" size="large"> 城市</h-btn>
         <h-dropdown-item type="title">浙江省</h-dropdown-item>
@@ -64,7 +64,7 @@
       <h-nav-item to="/layout">布局</h-nav-item>
       <h-nav-item :disabled="true" to="/layout">基础组件</h-nav-item>
       <h-input type="text" radius="small" placeholder="search" icon="fa fa-search" size="large"></h-input>
-      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn> 
+      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn>
       <h-dropdown position="bottom-right" align="right" >
         <h-btn slot="trigger" icon="fa fa-angle-down" size="large"> 城市</h-btn>
         <h-dropdown-item type="title">浙江省</h-dropdown-item>
@@ -83,7 +83,7 @@
       <h-nav-item to="/layout">布局</h-nav-item>
       <h-nav-item :disabled="true" to="/layout">基础组件</h-nav-item>
       <h-input type="text" radius="small" placeholder="search" icon="fa fa-search" size="large"></h-input>
-      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn> 
+      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn>
       <h-dropdown position="bottom-right" align="right" >
         <h-btn slot="trigger" icon="fa fa-angle-down" size="large"> 城市</h-btn>
         <h-dropdown-item type="title">浙江省</h-dropdown-item>
@@ -102,7 +102,7 @@
       <h-nav-item to="/layout">布局</h-nav-item>
       <h-nav-item :disabled="true" to="/layout">基础组件</h-nav-item>
       <h-input type="text" radius="small" placeholder="search" icon="fa fa-search" size="large"></h-input>
-      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn> 
+      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn>
       <h-dropdown position="bottom-right" align="right" >
         <h-btn slot="trigger" icon="fa fa-angle-down" size="large"> 城市</h-btn>
         <h-dropdown-item type="title">浙江省</h-dropdown-item>
@@ -121,7 +121,7 @@
       <h-nav-item to="/layout">布局</h-nav-item>
       <h-nav-item :disabled="true" to="/layout">基础组件</h-nav-item>
       <h-input type="text" radius="small" placeholder="search" icon="fa fa-search" size="large"></h-input>
-      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn> 
+      <h-btn semantic="danger" radius="small"  size="large">Github</h-btn>
       <h-dropdown position="bottom-right" align="right" >
         <h-btn slot="trigger" icon="fa fa-angle-down" size="large"> 城市</h-btn>
         <h-dropdown-item type="title">浙江省</h-dropdown-item>
@@ -144,49 +144,50 @@
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
+
 export default {
   name: 'nav',
   components: {
-    propsTable
+    propsTable,
   },
-  data () {
+  data() {
     return {
-      props: [ {
+      props: [{
         para: 'brand',
         native: 'false',
         desc: '导航brand',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'to',
         native: 'false',
         desc: '导航brand的链接',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'fixed',
         native: 'false',
         desc: '导航是否固定在顶部',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'semantic',
         native: 'false',
         desc: '语义类型',
         type: 'String',
         option: 'default、primary、success、info、warning、danger',
-        default: '-'
+        default: '-',
       }, {
         para: 'router',
         native: 'false',
         desc: '是否使用vue-router路由',
         type: 'Boolean',
         option: 'false、true',
-        default: '-'
+        default: '-',
       }],
       itemProps: [{
         para: 'to',
@@ -194,21 +195,21 @@ export default {
         desc: 'vue-router的路径或者window.loadtion的值',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'disabled',
         native: 'false',
         desc: 'disabled',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'align',
         native: 'false',
         desc: '对齐方式',
         type: '-',
         option: 'right、left',
-        default: '-'
+        default: '-',
       }],
       itemEventprops: [{
         para: 'click',
@@ -216,9 +217,9 @@ export default {
         desc: 'click事件',
         type: 'Function()',
         option: '-',
-        default: '-'
-      }]
-    }
-  }
-}
+        default: '-',
+      }],
+    };
+  },
+};
 </script>

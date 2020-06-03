@@ -1,19 +1,19 @@
 const nodeExternals = require('webpack-node-externals');
 const path = require('path');
 
-let configureWebpack = {};
+const configureWebpack = {};
 
 configureWebpack.externals = [
   {
-    vue: 'vue'
+    vue: 'vue',
   },
   // https://github.com/pixeloven/pixeloven/issues/30
   // https://github.com/liady/webpack-node-externals/issues/39
   // Doesn't work with yarn workspaces by default
   nodeExternals(),
   nodeExternals({
-    modulesDir: path.resolve(__dirname, 'node_modules')
-  })
+    modulesDir: path.resolve(__dirname, 'node_modules'),
+  }),
 ];
 
 
@@ -25,7 +25,7 @@ module.exports = {
   productionSourceMap: false,
   css: {
     extract: true,
-    sourceMap: false
+    sourceMap: false,
   },
   // 通用的configureWebpack配置
   configureWebpack,
@@ -36,7 +36,7 @@ module.exports = {
       .use('url-loader')
       .tap(options => Object.assign(options, { limit: 10 }));
 
-    //stylelint
+    // stylelint
     // webpackConfig
     //   .plugin('stylelint')
     //   .use('stylelint-webpack-plugin')
@@ -48,6 +48,6 @@ module.exports = {
     //         emitErrors: true
     //       }
     //     ];
-    //   });  
-  } 
-}
+    //   });
+  },
+};

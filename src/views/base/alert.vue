@@ -41,23 +41,23 @@
         this is alert
       </h-alert>
 
-      <h3>参数示例</h3> 
+      <h3>参数示例</h3>
       <props-table :data="props" caption="警告属性"/>
       <props-table :data="eventProps" caption="警告事件"/>
-    </h-row>    
+    </h-row>
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'select',
 
   components: {
-    propsTable
+    propsTable,
   },
 
-  data () {
+  data() {
     return {
       props: [{
         para: 'closeable',
@@ -65,28 +65,28 @@ export default {
         desc: '是否可关闭',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'semantic',
         native: 'false',
         desc: '语义类型',
         type: 'String',
         option: 'primary、success、info、warning、danger、text',
-        default: '-'
+        default: '-',
       }, {
         para: 'radius',
         native: 'false',
         desc: '圆角',
         type: 'String',
         option: 'small、large、circle',
-        default: '-'
+        default: '-',
       }, {
         para: 'size',
         native: 'false',
         desc: '最小尺寸',
         type: 'String',
         option: 'small、large',
-        default: '-'
+        default: '-',
       }],
 
       eventProps: [{
@@ -95,12 +95,9 @@ export default {
         desc: '警告关闭时候触发',
         type: 'Function()',
         option: '-',
-        default: '-'
-      }]
-    }
-  }
-}
+        default: '-',
+      }],
+    };
+  },
+};
 </script>
-
-
-

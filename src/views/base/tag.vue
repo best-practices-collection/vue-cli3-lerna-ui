@@ -22,23 +22,23 @@
       <h-tag radius="circle">version</h-tag>
       <h-tag semantic="success" size="larger">1.0.0</h-tag>
     </h-tag-group>
-    <h3>参数示例</h3> 
+    <h3>参数示例</h3>
     <props-table :data="props" caption="标签属性"/>
     <props-table :data="groupProps" caption="标签组属性"/>
-  </div>    
+  </div>
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'tag',
 
   components: {
-    propsTable
+    propsTable,
   },
 
-  data () {
+  data() {
     return {
       props: [{
         para: 'closeable',
@@ -46,28 +46,28 @@ export default {
         desc: '是否可关闭',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'semantic',
         native: 'false',
         desc: '语义类型',
         type: 'String',
         option: 'primary、success、info、warning、danger、text',
-        default: '-'
+        default: '-',
       }, {
         para: 'radius',
         native: 'false',
         desc: '圆角',
         type: 'String',
         option: 'small、large、circle',
-        default: '-'
+        default: '-',
       }, {
         para: 'size',
         native: 'false',
         desc: '尺寸',
         type: 'String',
         option: 'large、larger',
-        default: '-'
+        default: '-',
       }],
       groupProps: [{
         para: 'radius',
@@ -75,19 +75,16 @@ export default {
         desc: '圆角',
         type: 'String',
         option: 'small、large、circle',
-        default: '-'
+        default: '-',
       }, {
         para: 'size',
         native: 'false',
         desc: '尺寸',
         type: 'String',
         option: 'large、larger',
-        default: '-'
-      }]
-    }
-  }
-}
+        default: '-',
+      }],
+    };
+  },
+};
 </script>
-
-
-

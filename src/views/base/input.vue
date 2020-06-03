@@ -40,14 +40,14 @@
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'input',
   components: {
-    propsTable
+    propsTable,
   },
-  data () {
+  data() {
     return {
       baseInputValue: '',
       props: [{
@@ -56,91 +56,91 @@ export default {
         desc: 'Input的绑定值',
         type: 'String/Number',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'semantic',
         native: 'false',
         desc: '语义类型',
         type: 'String',
         option: 'default、primary、success、info、warning、danger、text',
-        default: '-'
+        default: '-',
       }, {
         para: 'width',
         native: 'false',
         desc: '宽度px数',
         type: 'String',
         option: '-',
-        default: '200'
+        default: '200',
       }, {
         para: 'width-full',
         native: 'false',
         desc: '宽度100%',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'radius',
         native: 'false',
         desc: '圆角',
         type: 'String',
         option: 'small、large、circle',
-        default: '-'
+        default: '-',
       }, {
         para: 'size',
         native: 'false',
         desc: '尺寸',
         type: 'String',
         option: 'small、large',
-        default: '-'
+        default: '-',
       }, {
         para: 'shadow',
         native: 'false',
         desc: '阴影',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'left-icon',
         native: 'false',
         desc: '左侧信息图标',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'icon',
         native: 'false',
         desc: '右侧功能图标',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'icon-click',
         native: 'false',
         desc: '功能图标点击事件',
         type: 'Function(e)',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'autocomplete',
         native: 'true',
         desc: '自动补全',
         type: 'String',
         option: 'on、off',
-        default: 'off'
+        default: 'off',
       }, {
         para: 'maxlength',
         native: 'true',
         desc: '设置最大长度',
         type: 'Number',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: '...',
         native: 'true',
         desc: '未列出的一些原生属性支持',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }],
 
       events: [{
@@ -149,30 +149,29 @@ export default {
         desc: 'focus事件',
         type: 'Function',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'blur',
         native: '-',
         desc: 'blur事件',
         type: 'Function',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'change',
         native: '-',
         desc: 'change事件',
         type: 'Function(newValue)',
         option: '-',
-        default: '-'
-      }]
-    }
+        default: '-',
+      }],
+    };
   },
 
   methods: {
-    iconClickEvent () {
+    iconClickEvent() {
       console.log('icon click') // eslint-disable-line
-    }
-  }
-}
+    },
+  },
+};
 </script>
-

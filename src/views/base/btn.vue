@@ -4,26 +4,26 @@
       <h5>基础类型</h5>
       <h-btn>Default</h-btn>
       <h-btn semantic="text">Text</h-btn>
-      <h5>语义类型</h5> 
-      <h-btn semantic="default">Default</h-btn> 
-      <h-btn semantic="dark">Dark</h-btn> 
-      <h-btn semantic="primary">Primary</h-btn> 
-      <h-btn semantic="success">Success</h-btn> 
-      <h-btn semantic="info">Info</h-btn> 
-      <h-btn semantic="warning">Warning</h-btn> 
-      <h-btn semantic="danger">Danger</h-btn> 
+      <h5>语义类型</h5>
+      <h-btn semantic="default">Default</h-btn>
+      <h-btn semantic="dark">Dark</h-btn>
+      <h-btn semantic="primary">Primary</h-btn>
+      <h-btn semantic="success">Success</h-btn>
+      <h-btn semantic="info">Info</h-btn>
+      <h-btn semantic="warning">Warning</h-btn>
+      <h-btn semantic="danger">Danger</h-btn>
       <h5>阴影</h5>
       <h-btn :shadow="true">Default</h-btn>
-      <h-btn semantic="default" :shadow="true">Default</h-btn> 
-      <h-btn semantic="primary" :shadow="true">Primary</h-btn> 
-      <h-btn semantic="success" :shadow="true">Success</h-btn> 
-      <h-btn semantic="info" :shadow="true">Info</h-btn> 
-      <h-btn semantic="warning" :shadow="true">Warning</h-btn> 
-      <h-btn semantic="danger" :shadow="true">Danger</h-btn> 
+      <h-btn semantic="default" :shadow="true">Default</h-btn>
+      <h-btn semantic="primary" :shadow="true">Primary</h-btn>
+      <h-btn semantic="success" :shadow="true">Success</h-btn>
+      <h-btn semantic="info" :shadow="true">Info</h-btn>
+      <h-btn semantic="warning" :shadow="true">Warning</h-btn>
+      <h-btn semantic="danger" :shadow="true">Danger</h-btn>
       <h5>圆角类型</h5>
       <h-btn radius="small">Small</h-btn>
-      <h-btn radius="large">Large</h-btn> 
-      <h-btn radius="circle">Circle</h-btn> 
+      <h-btn radius="large">Large</h-btn>
+      <h-btn radius="circle">Circle</h-btn>
       <h5>禁用状态</h5>
       <h-btn :disabled="true">Default</h-btn>
       <h-btn semantic="text" :disabled="true">Text</h-btn>
@@ -116,20 +116,20 @@
       <props-table :data="events" caption="按钮事件"/>
       <props-table :data="groupProps" caption="按钮组属性(注意:子组件h-btn的对应属性失效)"/>
 
-    </div>    
+    </div>
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'btn',
 
   components: {
-    propsTable
+    propsTable,
   },
 
-  data () {
+  data() {
     return {
       props: [{
         para: 'semantic',
@@ -137,84 +137,84 @@ export default {
         desc: '语义类型',
         type: 'String',
         option: 'default、dark、primary、success、info、warning、danger、text',
-        default: '-'
+        default: '-',
       }, {
         para: 'shadow',
         native: 'false',
         desc: '阴影',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'radius',
         native: 'false',
         desc: '圆角',
         type: 'String',
         option: 'small、large、circle',
-        default: '-'
+        default: '-',
       }, {
         para: 'size',
         native: 'false',
         desc: '尺寸',
         type: 'String',
         option: 'small、large',
-        default: '-'
+        default: '-',
       }, {
         para: 'left-icon',
         native: 'false',
         desc: '左侧图标',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'icon',
         native: 'false',
         desc: '右侧图标',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'type',
         native: 'true',
         desc: '表单类型',
         type: 'String',
         option: 'submit、button、reset',
-        default: 'button'
+        default: 'button',
       }, {
         para: 'name',
         native: 'true',
         desc: '名称',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'autofocus',
         native: 'true',
         desc: '是否自动获取焦点(兼容IE10以上)',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'disabled',
         native: 'true',
         desc: '是否禁用',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'router',
         native: 'false',
         desc: '是否使用vue-router路由',
         type: 'Boolean',
         option: 'false、true',
-        default: '-'
+        default: '-',
       }, {
         para: 'to',
         native: 'false',
         desc: 'vue-router的路径或者window.loadtion的值',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }],
 
       events: [{
@@ -223,7 +223,7 @@ export default {
         desc: 'click事件',
         type: 'Function',
         option: '-',
-        default: '-'
+        default: '-',
       }],
 
       groupProps: [{
@@ -232,38 +232,38 @@ export default {
         desc: '语义类型',
         type: 'String',
         option: 'default、primary、success、info、warning、danger',
-        default: '-'
+        default: '-',
       }, {
         para: 'shadow',
         native: 'false',
         desc: '阴影',
         type: 'Boolean',
         option: 'false、true',
-        default: 'false'
+        default: 'false',
       }, {
         para: 'radius',
         native: 'false',
         desc: '圆角',
         type: 'String',
         option: 'small、large、circle',
-        default: '-'
+        default: '-',
       }, {
         para: 'size',
         native: 'false',
         desc: '尺寸',
         type: 'String',
         option: 'small、large',
-        default: '-'
-      }]
-    }
+        default: '-',
+      }],
+    };
   },
 
   methods: {
-    clickEvent () {
-      alert('这是一个点击事件')
-    }
-  }
-}
+    clickEvent() {
+      alert('这是一个点击事件');
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -273,7 +273,3 @@ form {
 }
 
 </style>
-
-
-
-

@@ -6,15 +6,14 @@
       <li><router-link to="/option/color">色彩</router-link></li>
     </ul>
     <hr>
-    <div>   
-      <router-view></router-view> 
+    <div>
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'option'
-}
+  name: 'option',
+};
 </script>
-

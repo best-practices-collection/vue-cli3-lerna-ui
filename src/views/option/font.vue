@@ -1,140 +1,140 @@
 <template>
   <div>
     <h3>页面字体类型</h3>
-    <font-table 
-      :data="data" 
-      :row-style="rowStyle" 
-    /> 
+    <font-table
+      :data="data"
+      :row-style="rowStyle"
+    />
     <h3>标题类型</h3>
-    <font-table 
-      :data="titleDate" 
-      :row-style="titleRowStyle" 
-    /> 
+    <font-table
+      :data="titleDate"
+      :row-style="titleRowStyle"
+    />
 
   </div>
 </template>
 
 <script>
 
-import fontTable from '@/views/option/fontTable'
+import fontTable from '@/views/option/fontTable';
 
 export default {
   name: 'font',
 
   components: {
-    fontTable
+    fontTable,
   },
 
-  data () {
+  data() {
     return {
       data: [{
         index: '1',
         type: '正文中英文',
         family: 'BlinkMacSystemFont',
         size: '36px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '2',
         type: '正文中英文',
         family: '-apple-system',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '3',
         type: '正文英文',
         family: 'Segoe UI',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '4',
         type: '正文英文',
         family: 'Roboto',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '5',
         type: '正文英文',
         family: 'Oxygen',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '6',
         type: '正文英文',
         family: 'Ubuntu',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '7',
         type: '正文英文',
         family: 'Cantarell',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '8',
         type: '正文英文',
         family: 'Fira Sans',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '9',
         type: '正文英文',
         family: 'Droid Sans',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '10',
         type: '正文英文',
         family: 'Helvetica Neue',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '11',
         type: '正文英文',
         family: 'Helvetica',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '12',
         family: 'Arial',
         type: '正文英文',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '13',
         family: 'Tahoma',
         type: '正文英文',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '14',
         family: 'Microsoft YaHei',
         type: '正文中英文',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '1',
         family: 'Menlo',
         type: '代码',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '2',
         family: 'Monaco',
         type: '代码',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '3',
         family: 'Consolas',
         type: '代码',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }, {
         index: '4',
         family: 'Courier New',
         type: '代码',
         size: '14px',
-        weight: '400'
+        weight: '400',
       }],
 
       titleDate: [
@@ -143,52 +143,52 @@ export default {
           family: '-',
           type: 'h1',
           size: '36px',
-          weight: '500'
+          weight: '500',
         }, {
           index: '2',
           family: '-',
           type: 'h2',
           size: '30px',
-          weight: '500'
+          weight: '500',
         }, {
           index: '3',
           family: '-',
           type: 'h3',
           size: '24px',
-          weight: '500'
+          weight: '500',
         }, {
           index: '4',
           family: '-',
           type: 'h4',
           size: '16px',
-          weight: '500'
+          weight: '500',
         }, {
           index: '5',
           family: '-',
           type: 'h5',
           size: '12px',
-          weight: '500'
+          weight: '500',
         }, {
           index: '6',
           family: '-',
           type: 'small',
           size: '65%',
-          weight: '400'
-        }
-      ]
-    }
+          weight: '400',
+        },
+      ],
+    };
   },
 
   methods: {
-    rowStyle (row) {
-      return row.family
+    rowStyle(row) {
+      return row.family;
     },
 
-    titleRowStyle (row) {
-      return row.type
-    }
-  }
-}
+    titleRowStyle(row) {
+      return row.type;
+    },
+  },
+};
 </script>
 
 
@@ -197,7 +197,6 @@ export default {
 @font-family-base:                @font-family-sans-serif;
 @font-family-monospace:           Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-bulma:               BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-
 
 
 .h-tr-BlinkMacSystemFont {
@@ -332,6 +331,3 @@ export default {
   color: #999999;
 }
 </style>
-
-
-

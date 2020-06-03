@@ -22,22 +22,22 @@
       <h-btn @click="ShowActionWarningSnackbar">Action Warning</h-btn>
       <h-btn @click="ShowActionDangerSnackbar">Action Danger</h-btn>
 
-      <h3>参数示例</h3> 
+      <h3>参数示例</h3>
       <props-table :data="props" caption="通知处理属性"/>
-    </div>    
+    </div>
 </template>
 
 <script>
-import propsTable from '@/components/propsTable'
+import propsTable from '@/components/propsTable';
 
 export default {
   name: 'snackbar',
 
   components: {
-    propsTable
+    propsTable,
   },
 
-  data () {
+  data() {
     return {
       semantic: '',
       align: '',
@@ -47,185 +47,182 @@ export default {
         desc: '弹框信息',
         type: 'String',
         option: '',
-        default: ''
+        default: '',
       }, {
         para: 'position',
         native: 'false',
         desc: '弹框信息位置',
         type: 'Boolean',
         option: 'top, top-right, top-left, bottom, bottom-left, bottom-right',
-        default: 'top'
+        default: 'top',
       }, {
         para: 'duration',
         native: 'false',
         desc: '弹框信息持续时间',
         type: 'Number',
         option: '-',
-        default: '3000'
+        default: '3000',
       }, {
         para: 'semantic',
         native: 'false',
         desc: '语义类型',
         type: 'String',
         option: 'default、dark、primary、success、info、warning、danger',
-        default: 'dark'
+        default: 'dark',
       }, {
         para: 'actionSemantic',
         native: 'false',
         desc: '动作语义类型',
         type: 'String',
         option: 'primary、success、info、warning、danger',
-        default: 'primary'
+        default: 'primary',
       }, {
         para: 'actionText',
         native: 'false',
         desc: '动作文本(也可以用来当做关闭)',
         type: 'String',
         option: '-',
-        default: '-'
+        default: '-',
       }, {
         para: 'onAction',
         native: 'false',
         desc: '动作触发事件',
         type: 'Function',
         option: '-',
-        default: '-'
-      }]
-    }
+        default: '-',
+      }],
+    };
   },
 
   methods: {
-    ShowTopSnackbar () {
-      this.$snackbar('hello world')
+    ShowTopSnackbar() {
+      this.$snackbar('hello world');
     },
 
-    ShowTopLeftSnackbar () {
+    ShowTopLeftSnackbar() {
       this.$snackbar({
         message: 'hello world',
-        position: 'top-left'
-      })
+        position: 'top-left',
+      });
     },
 
-    ShowTopRightSnackbar () {
+    ShowTopRightSnackbar() {
       this.$snackbar({
         message: 'hello world',
-        position: 'top-right'
-      })
+        position: 'top-right',
+      });
     },
 
-    ShowBottomLeftSnackbar () {
+    ShowBottomLeftSnackbar() {
       this.$snackbar({
         message: 'hello world',
-        position: 'bottom-left'
-      })
+        position: 'bottom-left',
+      });
     },
 
-    ShowBottomSnackbar () {
+    ShowBottomSnackbar() {
       this.$snackbar({
         message: 'hello world',
-        position: 'bottom'
-      })
+        position: 'bottom',
+      });
     },
 
-    ShowBottomRightSnackbar () {
+    ShowBottomRightSnackbar() {
       this.$snackbar({
         message: 'hello world',
-        position: 'bottom-right'
-      })
+        position: 'bottom-right',
+      });
     },
 
-    ShowDefaultSnackbar () {
-      this.$snackbar({
-        message: 'hello world',
-        actionText: 'ENTRY',
-        semantic: 'default'
-      })
-    },
-
-    ShowPrimarySnackbar () {
+    ShowDefaultSnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'ENTRY',
-        semantic: 'primary'
-      })
+        semantic: 'default',
+      });
     },
 
-    ShowSuccessSnackbar () {
+    ShowPrimarySnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'ENTRY',
-        semantic: 'success'
-      })
+        semantic: 'primary',
+      });
     },
 
-    ShowInfoSnackbar () {
+    ShowSuccessSnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'ENTRY',
-        semantic: 'info'
-      })
+        semantic: 'success',
+      });
     },
 
-    ShowWarningSnackbar () {
+    ShowInfoSnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'ENTRY',
-        semantic: 'warning'
-      })
+        semantic: 'info',
+      });
     },
 
-    ShowDangerSnackbar () {
+    ShowWarningSnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'ENTRY',
-        semantic: 'danger'
-      })
+        semantic: 'warning',
+      });
     },
 
-    ShowActionPrimarySnackbar () {
+    ShowDangerSnackbar() {
+      this.$snackbar({
+        message: 'hello world',
+        actionText: 'ENTRY',
+        semantic: 'danger',
+      });
+    },
+
+    ShowActionPrimarySnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'CONSOLE',
-        onAction () { 
+        onAction() {
           console.log('this is a action')  // eslint-disable-line
-        }
-      })
+        },
+      });
     },
 
-    ShowActionSuccessSnackbar () {
+    ShowActionSuccessSnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'CLOSE',
-        actionSemantic: 'success'
-      })
+        actionSemantic: 'success',
+      });
     },
 
-    ShowActionInfoSnackbar () {
+    ShowActionInfoSnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'CLOSE',
-        actionSemantic: 'info'
-      })
+        actionSemantic: 'info',
+      });
     },
 
-    ShowActionWarningSnackbar () {
+    ShowActionWarningSnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'CLOSE',
-        actionSemantic: 'warning'
-      })
+        actionSemantic: 'warning',
+      });
     },
 
-    ShowActionDangerSnackbar () {
+    ShowActionDangerSnackbar() {
       this.$snackbar({
         message: 'hello world',
         actionText: 'CLOSE',
-        actionSemantic: 'danger'
-      })
-    }
-  }
-}
+        actionSemantic: 'danger',
+      });
+    },
+  },
+};
 </script>
-
-
-

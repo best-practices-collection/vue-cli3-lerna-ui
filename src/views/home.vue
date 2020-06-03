@@ -47,8 +47,8 @@
       </h-dropdown>
       <h-btn to="https://github.com/aoping/vue-cli3-lerna-ui" class="right" left-icon="fa fa-github" semantic="black" radius="small">Github</h-btn>
     </h-nav>
-    <div class="main-content">   
-      <router-view></router-view> 
+    <div class="main-content">
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -56,15 +56,15 @@
 <script>
 export default {
   name: 'home',
-  data () {
+  data() {
     return {
-    }
+    };
   },
 
   methods: {
 
-  }
-}
+  },
+};
 </script>
 
 <style lang="less" scoped>
